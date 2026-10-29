@@ -1,0 +1,5 @@
+Feature: Ecommerce Validation
+    @Validation
+    Scenario: Placing the Order
+        Given a login to ecommerce2 application with "anshika@gmail.com" and "Iamking@000"
+        Then Verify Errow message is displayed

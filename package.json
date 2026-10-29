@@ -1,0 +1,27 @@
+{
+  "name": "playwright-udemy-demo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep @web",
+    "ApiTest": "npx playwright test --grep @API",
+    "SafariWebTest": "npx playwright test --config playwright-config.js --project=safari",
+    "CucumberRegression": "npx cucumber-js --tags @Regression --exit --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-playwright": "^3.10.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/mcp": "^0.0.76",
+    "exceljs": "^4.4.0"
+  }
+}
